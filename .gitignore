@@ -1,0 +1,7 @@
+target/
+*.log
+.class
+.project
+.settings/
+.idea/
+.vscode/
