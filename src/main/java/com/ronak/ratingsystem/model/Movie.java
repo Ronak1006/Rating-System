@@ -1,6 +1,6 @@
 package com.ronak.ratingsystem.model;
 
-public class Movie implements Rateable {
+public class Movie implements Rateable { //class for movie information
     private String title;
     private int releaseYear;
     private String genre;
@@ -23,6 +23,7 @@ public class Movie implements Rateable {
         return genre;
     }
 
+    @Override
     public String toString() {
         return "Movie: " + title + " (" + releaseYear + ") - " + genre;
     }
