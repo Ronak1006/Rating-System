@@ -5,7 +5,8 @@ import java.util.List;
 
 public class Season implements Rateable { //class for seasons of a tv show
     private int seasonNumber;
-    private List<Episode> episodes; //episode instance inside season (episodes in a season)
+    private int releaseYear;
+    private List<Episode> episodes; //episode instances inside season (episodes in a season)
 
     public Season (int seasonNumber) {
         this.seasonNumber = seasonNumber;
@@ -14,6 +15,10 @@ public class Season implements Rateable { //class for seasons of a tv show
 
     public String getTitle() {
         return "Season " + seasonNumber;
+    }
+
+    public int getReleaseYear() {
+        return releaseYear;
     }
 
     public int getSeasonNumber() {
