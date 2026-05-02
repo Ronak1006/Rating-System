@@ -6,11 +6,11 @@ import java.util.List;
 public class Season implements Rateable { //class for seasons of a tv show
     private int seasonNumber;
     private int releaseYear;
-    private List<Episode> episodes; //episode instances inside season (episodes in a season)
+    private List<Episode> episodes; //episode instances inside season as a list interface (episodes in a season)
 
     public Season (int seasonNumber) {
         this.seasonNumber = seasonNumber;
-        this.episodes = new ArrayList<>(); //episodes contained as an arraylist
+        this.episodes = new ArrayList<>(); //episodes is a list object pointing to arraylist object
     }
 
     public String getTitle() {

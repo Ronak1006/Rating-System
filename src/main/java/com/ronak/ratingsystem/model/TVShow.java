@@ -6,12 +6,12 @@ import java.util.List;
 public class TVShow implements Rateable { //class for tv shows that are rateable
     private String title;
     private String genre;
-    private List<Season> seasons; //season instances inside class (seasons in a show)
+    private List<Season> seasons; //season instances inside class as list reference (seasons in a show)
 
     public TVShow(String title, String genre) {
         this.title = title;
         this.genre = genre;
-        this.seasons = new ArrayList<>(); //seasons in a show stored in an arraylist
+        this.seasons = new ArrayList<>(); //seasons in a show stored in an arraylist object
     }
 
     public String getTitle() {
@@ -26,7 +26,7 @@ public class TVShow implements Rateable { //class for tv shows that are rateable
         return seasons;
     }
 
-    public void addSeason(Season season) { //add additional seasons to list
+    public void addSeason(Season season) { //add additional seasons to arraylist
         seasons.add(season);
     }
 
